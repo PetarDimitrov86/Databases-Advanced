@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-public class Test
+public class InitialSetup
 {
     static void Main()
     {
@@ -75,7 +75,5 @@ public class Test
             }
             connection.Close();
         }
-
-
     }
 }
