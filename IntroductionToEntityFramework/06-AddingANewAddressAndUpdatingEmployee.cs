@@ -23,7 +23,7 @@ public class EmployeesFullInformation
             var employees = context.Employees.OrderByDescending(e => e.AddressID).Take(10);
             foreach (var emp in employees)
             {
-                Console.WriteLine($"{emp.Address.N}");
+                Console.WriteLine($"{emp.Address.AddressText}");
             }
         }
     }
