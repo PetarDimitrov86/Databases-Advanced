@@ -9,9 +9,11 @@ public class EmployeesFullInformation
         {
             var project = context.Projects.Find(2);
 
-            var employeesToRemove = project.Employees.Where(e => e.Projects == project);
-            var employees = context.Employees;
-            employees.RemoveRange(employeesToRemove);
+            var employeesProjectsToRemove = project.Employees.Where(e => e.Projects == project);
+            foreach (var employeeProject in employeesProjectsToRemove)
+            {
+                employeeProject.Projects.Remove(project);
+            }
 
             context.Projects.Remove(project);
 
