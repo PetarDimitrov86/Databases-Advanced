@@ -16,6 +16,9 @@ public class EmployeesFullInformation
             Employee employee = null;
             employee = context.Employees.FirstOrDefault(e => e.LastName == "Nakov");
             employee.Address = address;
+            
+            // 
+            context.Employees.FirstOrDefault(e => e.LastName == "Nakov").Address = address;
 
             context.SaveChanges();
             var employees = context.Employees.OrderByDescending(e => e.AddressID).Take(10);
