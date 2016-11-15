@@ -35,5 +35,20 @@ namespace _02_User.Validations
             }
             return true;
         }
+              
+    //    [AttributeUsage(AttributeTargets.Property)]
+    //public class Email : ValidationAttribute
+    //{
+    //    public override bool IsValid(object value)
+    //    {
+    //      string email = (string) value;
+    //      Regex emailRegex = new Regex(@"^[A-z][\w.]+@[\w]+.[A-z]{2,3}$");
+    //        if (emailRegex.IsMatch(email))
+    //        {
+    //            return true;
+    //        }
+    //        return false;
+    //    }
+    //}
     }
 }
