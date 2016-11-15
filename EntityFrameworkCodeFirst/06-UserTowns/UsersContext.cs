@@ -13,5 +13,7 @@ namespace _02_User
         }
 
         public virtual IDbSet<User> Users { get; set; }
+        
+        public virtual IDbSet<Town> Towns { get; set; }
     }
 }
