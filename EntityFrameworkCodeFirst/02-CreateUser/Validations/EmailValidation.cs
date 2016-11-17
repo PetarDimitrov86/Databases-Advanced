@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace _02_User.Validations
 {
+    [AttributeUsage(AttributeTargets.Property)]
     public class EmailValidationAttribute : ValidationAttribute
     {
         public override bool IsValid(object value)
