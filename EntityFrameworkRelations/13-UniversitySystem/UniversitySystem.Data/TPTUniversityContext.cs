@@ -17,8 +17,8 @@ namespace UniversitySystem.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>().ToTable("Student");
-            modelBuilder.Entity<Teacher>().ToTable("Teacher");
+            modelBuilder.Entity<Student>().ToTable("Students");
+            modelBuilder.Entity<Teacher>().ToTable("Teachers");
 
             base.OnModelCreating(modelBuilder);
         }
