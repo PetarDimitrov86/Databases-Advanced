@@ -30,8 +30,8 @@ namespace _12_BillsPaymentSystem
             //Table Per Type (TPT) Seperate table for each of the children classes
             //Another way to do it is to add the [Table("TableName")] Attribute above each of the children classes
 
-            modelBuilder.Entity<BankAccount>().ToTable("BankAccount");
-            modelBuilder.Entity<CreditCard>().ToTable("CreditCard");
+            modelBuilder.Entity<BankAccount>().ToTable("BankAccounts");
+            modelBuilder.Entity<CreditCard>().ToTable("CreditCards");
 
             //Table Per Concrete Type (TPC)
             //Each of the class Tables will have all of the columns from the Parents Class
@@ -39,12 +39,12 @@ namespace _12_BillsPaymentSystem
             //modelBuilder.Entity<BankAccount>().Map(m =>
             //{
             //    m.MapInheritedProperties();
-            //    m.ToTable("BankAccount");
+            //    m.ToTable("BankAccounts");
             //});
             //modelBuilder.Entity<CreditCard>().Map(m =>
             //{
             //    m.MapInheritedProperties();
-            //    m.ToTable("CreditCard");
+            //    m.ToTable("CreditCards");
             //});
 
             base.OnModelCreating(modelBuilder);
