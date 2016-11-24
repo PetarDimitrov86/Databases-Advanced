@@ -15,9 +15,9 @@
 
         static void Main(string[] args)
         {
-            //ImportUsers();
-            //ImportCategories();
-            //ImportProducts();
+            ImportUsers();
+            ImportCategories();
+            ImportProducts();
         }
 
         private static void ImportProducts()
@@ -34,10 +34,16 @@
                     product.Buyer = context.Users
                             .FirstOrDefault(u => u.Id == counter % context.Users.Count());
                 }
-                int num = counter + 1 %context.Users.Count();
+
                 product.Seller = context.Users
                         .FirstOrDefault(u => u.Id == (counter + 4) % context.Users.Count());
+
+                product.Categories.Add(context.Categories.FirstOrDefault(c => c.Id == counter % context.Categories.Count() + 1));
+                product.Categories.Add(context.Categories.FirstOrDefault(c => c.Id == (counter + 3) % context.Categories.Count() + 1));
+                product.Categories.Add(context.Categories.FirstOrDefault(c => c.Id == (counter + 6) % context.Categories.Count() + 1));
+
                 counter++;
+
                 context.Products.Add(product);
             }
 
