@@ -17,8 +17,8 @@ namespace ProductShop.Data
                 .WithMany(c => c.Products)
                 .Map(pc =>
                     {
-                        pc.MapLeftKey("Category_Id");
-                        pc.MapRightKey("Product_Id");
+                        pc.MapLeftKey("Product_Id");
+                        pc.MapRightKey("Category_Id");
                         pc.ToTable("CategoryProducts");
                     }
                 );
