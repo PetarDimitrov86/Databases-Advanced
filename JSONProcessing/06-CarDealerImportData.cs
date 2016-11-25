@@ -46,7 +46,7 @@
 
             foreach (var part in partsEntities)
             {
-                int newNumber = rnd.Next(1, context.Suppliers.Count() - 1);
+                int newNumber = rnd.Next(1, context.Suppliers.Count() + 1);
                 part.Supplier = context.Suppliers.FirstOrDefault(sup => sup.Id == newNumber);
                 context.Parts.Add(part);
             }
@@ -66,7 +66,7 @@
 
                 for (int i = 0; i < numberOfPartsToAdd; i++)
                 {
-                    int partIndext = rnd.Next(1, context.Parts.Count() - 1);
+                    int partIndext = rnd.Next(1, context.Parts.Count() + 1);
                     car.Parts.Add(context.Parts.FirstOrDefault(part => part.Id == partIndext));
                 }
 
@@ -96,7 +96,7 @@
 
             foreach (var car in context.Cars)
             {
-                int customerId = rnd.Next(1, context.Customers.Count() - 1);
+                int customerId = rnd.Next(1, context.Customers.Count() + 1);
                 Customer customerToAdd = context.Customers.FirstOrDefault(customer => customer.Id == customerId);
 
                 decimal discountRate = discountRates[rnd.Next(0, discountRates.Count - 1)];
