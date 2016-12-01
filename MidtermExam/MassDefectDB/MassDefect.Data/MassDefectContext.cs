@@ -28,8 +28,9 @@ namespace MassDefect.Data
                 .WithMany(anomaly => anomaly.Victims)
                 .Map(pa =>
                 {
-                    pa.MapLeftKey("AnomalyId");
-                    pa.MapRightKey("PersonId");
+                //MapLeft should be for the class in modelBuilder.Entity<Person>()
+                    pa.MapLeftKey("PersonId");
+                    pa.MapRightKey("AnomalyId");
                     pa.ToTable("AnomalyVictims");
                 });
 
