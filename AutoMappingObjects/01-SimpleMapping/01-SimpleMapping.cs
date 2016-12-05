@@ -15,7 +15,8 @@
                 FirstName = "Petar",
                 LastName = "Dimitrov",
                 Birthday = DateTime.Now,
-                Salary = 00000.1m
+                Salary = 00000.1m,
+                Address = "Vasil Aprilov 17, Pleven"
             };
 
             EmployeeDto emplDto = Mapper.Map<EmployeeDto>(employee);
