@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<photographers>
+  <photographer name="Jared Polin" primary-camera="Nikon D200" />
+  <photographer name="Alberto Korda" primary-camera="Nikon D3X" />
+  <photographer name="Delta Tiano" primary-camera="Pentax K-5" />
+  <photographer name="Bunny Nolan" primary-camera="Nikon D4" />
+  <photographer name="Jamie Mauger" primary-camera="Nikon D2X" />
+  <photographer name="Stephnie Arciniega" primary-camera="Sony A50">
+    <lenses>
+      <lens>Tamron 28mm f1.8</lens>
+      <lens>Tamron 30mm f2.8</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Freeda Casimir" primary-camera="Pentax K-3 II">
+    <lenses>
+      <lens>Tokina 100mm f1.2</lens>
+      <lens>Pentax 135mm f2.8</lens>
+      <lens>Tokina 20mm f2.0</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Cheri Regina" primary-camera="Pentax K-500">
+    <lenses>
+      <lens>Pentax 18mm f2.8</lens>
+      <lens>Pentax 27mm f2.8</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Tashia Lunsford" primary-camera="Sony A290">
+    <lenses>
+      <lens>Tamron 24mm f1.8</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Luciano Brisker" primary-camera="Fuji XS1" />
+  <photographer name="Kirstin Whidbee" primary-camera="Canon 5D Mk II">
+    <lenses>
+      <lens>Canon 8mm f2.0</lens>
+      <lens>Canon 300mm f1.4</lens>
+      <lens>Sigma 18mm f4.0</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Aimee Ochoa" primary-camera="Fuji X100" />
+  <photographer name="Federico Arceo" primary-camera="Sony A580">
+    <lenses>
+      <lens>Tamron 28mm f1.8</lens>
+      <lens>Tokina 200mm f2.8</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Beverley Kirby" primary-camera="Fuji XQ1">
+    <lenses>
+      <lens>Tamron 30mm f2.8</lens>
+      <lens>Tamron 30mm f1.8</lens>
+    </lenses>
+  </photographer>
+  <photographer name="Benjamin Lindblad" primary-camera="Canon 100D" />
+</photographers>
